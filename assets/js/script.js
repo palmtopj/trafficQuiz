@@ -2,6 +2,7 @@ console.log("tacos");
 var timerElement = document.querySelector(".timerCount");
 var startQuizButton = document.querySelector("#startButton");
 
+var root;
 var timer;
 var timerCount;
 // startQuizButton.addEventListener("click", function (event) {
