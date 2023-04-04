@@ -1,4 +1,4 @@
-console.log("tacos");
+// console.log("tacos");
 var timerElement = document.querySelector(".timerCount");
 var startQuizButton = document.querySelector("#startButton");
 
