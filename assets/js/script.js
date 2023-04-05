@@ -10,10 +10,17 @@ var timerCount;
 // });
 startQuizButton.addEventListener("click", startQuiz);
 
+function introScreen() {
+  var introEl = document.querySelector("#intro");
+  questionCard.style.display = "none";
+}
+
+introScreen();
+
 function startQuiz() {
   var introEl = document.querySelector("#intro");
   introEl.style.display = "none";
-
+  questionCard.style.display = "block";
   timerCount = 20;
   console.log("startQuiz");
   timer = setInterval(function () {
