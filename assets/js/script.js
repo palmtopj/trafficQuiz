@@ -11,6 +11,9 @@ var timerCount;
 startQuizButton.addEventListener("click", startQuiz);
 
 function startQuiz() {
+  var introEl = document.querySelector("#intro");
+  introEl.style.display = "none";
+
   timerCount = 20;
   console.log("startQuiz");
   timer = setInterval(function () {
@@ -20,4 +23,5 @@ function startQuiz() {
       clearInterval(timer);
     }
   }, 1000);
+  console.log("QuizStarted");
 }
