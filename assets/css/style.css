@@ -1,3 +1,7 @@
 body{
     background-color: rgb(119, 58, 138);
 }
+#answers{
+    display: flex;
+    flex-direction: column;
+}

@@ -5,9 +5,7 @@ var startQuizButton = document.querySelector("#startButton");
 var root;
 var timer;
 var timerCount;
-// startQuizButton.addEventListener("click", function (event) {
-//   console.log(event);
-// });
+
 startQuizButton.addEventListener("click", startQuiz);
 
 function introScreen() {
@@ -18,6 +16,7 @@ function introScreen() {
 introScreen();
 
 function startQuiz() {
+  // do I need this? event.preventDefault();
   var introEl = document.querySelector("#intro");
   introEl.style.display = "none";
   questionCard.style.display = "block";
